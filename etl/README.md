@@ -1,5 +1,5 @@
 # Ejercicio 1
-Se realiza un proceso de ETL utilizando Python para cargarlos en una base de datos PostgreSQL utilizando Docker.
+Se realiza un proceso de ETL utilizando Python para leer datos de un archivo CSV y cargarlos en una base de datos PostgreSQL utilizando Docker comopose.
 
 
 Ejecuta el siguiente comando para construir la imagen basada en Docker.
@@ -19,3 +19,6 @@ Nos conectamos al contenedor en ejecución para revisar que el servicio de Postg
 
 Una vez conectado al contenedor, ingresa al servicio de PostgreSQL.
 > $ psql -U postgres
+
+Inicia los servicios definidos en el archivo de Docker compose
+> $ sudo docker compose up -d 
