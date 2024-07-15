@@ -33,7 +33,7 @@ jobs:
       - name: execute py script # run main.py
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python get_csv_weather.py
+        run: python ./weather/get_csv_weather.py
 
       - name: commit files
         run: |
