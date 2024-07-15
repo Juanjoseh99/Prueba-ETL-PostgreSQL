@@ -8,4 +8,5 @@ ENV POSTGRES_DB Ventas
 # La carpeta de initdb.d maneja los scripts que se van a ejecutar una vez se encienda el contenedor
 ADD ejercicio1.sql /docker-entrypoint-initdb.d/
 
-CMD ["postgres"]
+#inicia el servidor de PostgreSQL
+CMD ["postgres"] 
